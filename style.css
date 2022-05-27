@@ -9,6 +9,48 @@ If you set box-sizing: border-box; on an element, padding and border are include
 }
 
 body {
+    background-image: url('./images/totoro-background.jpg');     /* adds background image to webpage */
+    background-size: cover;     /* scales the images while preserving its ratio to the smallest possible size to fill container */
+    background-position: center center;     /* The background-position property sets the starting position of a background image. */
+    min-height: 100vh;     /* initial body height will take 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
     font-family: "Poppins", sans-serif;
     margin: 0;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 5rem;
+    margin-top: -10rem;     /* rem stands for “root em  */
+    margin-bottom: 10rem;
+}
+
+.countdown-container {
+    display: flex;
+    flex-wrap: wrap;     /* mobile responsive */
+    justify-content: center;     /* mobile responsive */
+}
+
+.num-text {
+    max-width: 300px;     /* prevent text/numbers from moving */
+    min-width: 300px;     /* prevent text/numbers from moving */
+    font-weight: 600;
+    font-size: 10rem;
+    line-height: 1;     /* sets the differences between two lines of your content. It defines the amount of space above and below inline elements */
+    margin: 0 2px;    
+    text-align: center;
+    -webkit-text-stroke:2px black;   /* add outline to numbers */
+    color: #9e938390;
+    background-color:  #e1f2f580;     /* padding color */
+}
+
+.time-text {
+    text-align: center;     /* aligns days, hours, min, sec to center */
+}
+
+span {
+    font-size: 1.7rem;
 }
